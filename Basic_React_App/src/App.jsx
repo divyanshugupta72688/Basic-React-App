@@ -1,10 +1,11 @@
 
 import './App.css'
-
+import{ Title,Sum }from "./Title"
+import ProductTab from "./ProductTab" 
 function App() {
-  
-
-  return <button>CLick ME!</button>
+    return (
+  <ProductTab/>
+  );
 }
 
 export default App

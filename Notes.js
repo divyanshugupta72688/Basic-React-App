@@ -37,5 +37,18 @@ const element = React.createElement("h1", null, "Hello World!");
 
 6. to CREATE FRONTENED ->npm create vite@latest
 7.to start the server-> npm run dev
+
+8.if u want render other function u have to write <Title/>
+
+9. FOR IMPORT AND EXPORT =>
+    FOR SINGLE IMPORT AND EXPORT -> import Title from "./Title.jsx" 
+                                    export default Title 
+
+    FOR MUTLIPLE IMPORT AND EXPORT -> export{Title ,sum}
+                                      import {Title,Sum} from "./Title"
+                                      AGAR PARAMTERE DIYA HO DUSRE COMPONENT ME {Sum(2,3)}
+10.JAB BHI HUM CHAHTE HAI KI EXTRA NODE CREATE NA HO CHILDREN KO GROUP KARNE KE LIYE TO FREGMANT KA USE KARTE HAI <></>.
+11. AGAR HUM JSX KE UNDER JS LIKHNA HO TO {}CURLY BRACKETS KE UNDER LIKHTE HAI..
+12.
 */
 
