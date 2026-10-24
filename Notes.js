@@ -49,6 +49,58 @@ const element = React.createElement("h1", null, "Hello World!");
                                       AGAR PARAMTERE DIYA HO DUSRE COMPONENT ME {Sum(2,3)}
 10.JAB BHI HUM CHAHTE HAI KI EXTRA NODE CREATE NA HO CHILDREN KO GROUP KARNE KE LIYE TO FREGMANT KA USE KARTE HAI <></>.
 11. AGAR HUM JSX KE UNDER JS LIKHNA HO TO {}CURLY BRACKETS KE UNDER LIKHTE HAI..
-12.
+12.PROPS =>
+            Props in React are used to pass data from one component to another component.
+
+Props ka use Parent Component se Child Component mein data pass karne ke liye hota hai.
+String ko hum double quotes (" ") mein pass karte hain.
+Number ko pass karne ke liye curly braces {} use karte hain.
+
+EXAMPLE =>
+*/
+
+function Product({ title, Price }) {
+return (
+<div className="Product">
+<h1>Title: {title}</h1>
+<h3>Price: {Price}</h3>
+</div>
+);
+}
+
+function ProductTab() {
+return (
+<>
+<Product title="Phone" Price={30000} />
+<Product title="Laptop" Price={40000} />
+<Product title="Mixy" Price={5000} />
+</>
+);
+}
+
+export default ProductTab;
+
+/*
+OUTPUT =>
+
+Title: Phone
+Price: 30000
+
+Title: Laptop
+Price: 40000
+
+Title: Mixy
+Price: 5000
+
+IMPORTANT =>
+Curly braces {} are used to pass JavaScript values or expressions in JSX.
+
+Example:
+name="Rahul" // String
+Price={30000} // Number
+isStudent={true} // Boolean
+
+13. CONITION LIKHNE KA TAREEKA=> {Price>30000 ?<p>Discount of 5 %</p>:null}
+
 */
 
