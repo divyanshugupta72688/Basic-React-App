@@ -2,9 +2,10 @@
 import './App.css'
 import{ Title,Sum }from "./Title"
 import ProductTab from "./ProductTab" 
+import MsgBox from './MsgBox';
 function App() {
     return (
-  <ProductTab/>
+  <MsgBox UserName="Divyanshu Gupta" TextColor="blue"/>
   );
 }
 
