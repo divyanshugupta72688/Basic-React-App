@@ -1,24 +1,20 @@
 /*
-
-
-1. REACT
-React is a JavaScript library used for building user interfaces (UI).
-
+1. REACT=>
+         React is a JavaScript library used for building user interfaces (UI).
 Example:
 React is used to build interactive websites and web applications.
 
-
-2. COMPONENT
-A component is a reusable piece of UI that has its own logic and appearance.
+2. COMPONENT=>
+            A component is a reusable piece of UI that has its own logic and appearance.
 
 Example:
 Navbar, Footer, Button, and Sidebar are common React components.
 
-
-3. JSX
-JSX stands for JavaScript XML.
+3. JSX=>
+       JSX stands for JavaScript XML.
 
 It is a syntax extension for JavaScript that allows us to write HTML-like code inside JavaScript, mainly used in React.
+
 
 Example:
 const element = <h1>Hello World!</h1>;
@@ -112,8 +108,82 @@ isStudent={true} // Boolean
 HOOKS WERE NEW ADDITION IN 16.8 REACT
 
 
-18.useState is a React Hook that allows us to create and manage state variables in a functional component. When the state changes, 
+18.UseState is a React Hook that allows us to create and manage state variables in a functional component. When the state changes, 
    React re-renders the component to update the UI.
 USE STATE RETURNS AN ARRAY WITH EXACTLY TWO VALUE
-          */
+
+19.import { useState } from "react";
+
+export default function Counter(){
+    let[count,setCount] = useState(0);
+    
+    let incCount=()=>{
+        // setCount(count+1);//asynchronous function hota hai..
+        // setCount(count+1);// increase ek baar hii hoga chahe jitni baar bhi ye statment likh lu.
+        // if u want execute upper lines then u have to call back.by following
+        setCount((currvalue)=>{
+            return currvalue+1;
+        });
+        setCount((currvalue)=>{
+            return currvalue+1;
+        });
+        
+    }
+    return(
+        <div>
+        <h1>Count={count}</h1>
+        
+        <button onClick={incCount}>Increase Button!</button>
+        </div>
+    )
+};
+
+20.LEXICAL SCOPING=>Lexical scoping means a function's access to variables is determined by where the function is defined in the source code
+Function kahan likha gaya hai, uske basis par decide hota hai ki woh kaun-se variables access kar sakta hai.
+EXAMPLE =>
+  
+  function outer(){
+  let name = "Divyanshu Gupta"
+  console.log(secret)// it can not access the secret varriable
+  function inner(){
+  let secret = "evrything is possible in my life "
+  console.log(name) it can access the name varriable
+  }
+  function innertwo(){
+  console.log(secret)// it can not access the secret varriable
+  console.log(name) it can also access the name varriable
+  }
+  inner();
+  innertwo()
+  }
+  outer();
+
+IN SIMPLE WORD=> BAAP SE BETA LE SAKTA HAI LEKIN BETE SE BAAP NAHI LE SAKTA AUR BHAI BHAI APAS ME SHARE NAHI KR SAKTE..
+
+21.CLOSURE=>A closure is a function that remembers and accesses variables from its lexical scope, even when executed outside that scope.
+EXAMPLE=>function outer() {
+    let count = 0;
+
+    function inner() {
+        count++;
+        console.log(count);
+    }
+
+    return inner;
+}
+
+let result = outer();
+
+result();
+result();
+result();
+
+OUTPUT=>1
+        2
+        3
+
+        IN SIMPLW WORD=>Jab outer function khatam ho jaata hai, tab bhi inner function apne outer function ke variable ko yaad rakh sakta hai.
+22.
+
+        */
 
