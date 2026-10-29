@@ -1,4 +1,3 @@
-
 /*
 
 
@@ -60,22 +59,22 @@ EXAMPLE =>
 */
 
 function Product({ title, Price }) {
-return (
-<div className="Product">
-<h1>Title: {title}</h1>
-<h3>Price: {Price}</h3>
-</div>
-);
+  return (
+    <div className="Product">
+      <h1>Title: {title}</h1>
+      <h3>Price: {Price}</h3>
+    </div>
+  );
 }
 
 function ProductTab() {
-return (
-<>
-<Product title="Phone" Price={30000} />
-<Product title="Laptop" Price={40000} />
-<Product title="Mixy" Price={5000} />
-</>
-);
+  return (
+    <>
+      <Product title="Phone" Price={30000} />
+      <Product title="Laptop" Price={40000} />
+      <Product title="Mixy" Price={5000} />
+    </>
+  );
 }
 
 export default ProductTab;
@@ -102,5 +101,8 @@ isStudent={true} // Boolean
 
 13. CONITION LIKHNE KA TAREEKA=> {Price>30000 ?<p>Discount of 5 %</p>:null}
 
-*/
+14. EVENT ME KABHI BHI METHOD KO EXECUTE NAHI KARNA KYUKI AGAR YE KAR DOGE TO EK BAAR HII EVENT EXECUTE HOGA AUTOMATIC!
+15.FORM KO SUBMIT KARTE TIME BHT SAARE DEFAULT BEHAVOIR CREATE HOTE HAI USE ROKNE KE LIYE event.preventDefault() use karte hai.
 
+16.STATE=>State is a built-in React feature used to store and manage data in a component. When the state changes, React re-renders the component to update the UI.
+*/
