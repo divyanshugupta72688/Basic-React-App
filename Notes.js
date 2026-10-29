@@ -104,5 +104,16 @@ isStudent={true} // Boolean
 14. EVENT ME KABHI BHI METHOD KO EXECUTE NAHI KARNA KYUKI AGAR YE KAR DOGE TO EK BAAR HII EVENT EXECUTE HOGA AUTOMATIC!
 15.FORM KO SUBMIT KARTE TIME BHT SAARE DEFAULT BEHAVOIR CREATE HOTE HAI USE ROKNE KE LIYE event.preventDefault() use karte hai.
 
-16.STATE=>State is a built-in React feature used to store and manage data in a component. When the state changes, React re-renders the component to update the UI.
-*/
+16.STATE=>State is a built-in React feature used to store and manage data in a component. When the state changes, 
+          React re-renders the component to update the UI.
+          component ke under jo bhi change hote hai vo UI ko rerender nahi karwa paate hai...
+
+17. HOOKS EK AISA FUNCTON YA METHOD HAI JO AUR FUNCTIONALITY DETE HAI REACT KE UNDER
+HOOKS WERE NEW ADDITION IN 16.8 REACT
+
+
+18.useState is a React Hook that allows us to create and manage state variables in a functional component. When the state changes, 
+   React re-renders the component to update the UI.
+USE STATE RETURNS AN ARRAY WITH EXACTLY TWO VALUE
+          */
+
