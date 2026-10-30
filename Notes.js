@@ -183,7 +183,13 @@ OUTPUT=>1
         3
 
         IN SIMPLW WORD=>Jab outer function khatam ho jaata hai, tab bhi inner function apne outer function ke variable ko yaad rakh sakta hai.
-22.
+22.JAB BHI HUM STATE FUNCTION ME OBJECT PASS KARTE HAI TO SET FUNCTION ME NORMALLY INCREASE NAHI KRTA HAI USKE LIYE
+    let[moves,setmoves] = useState({Blue:0,Red:0,Green:0,yellow:0})
+    let updateBlue=()=>{
+        setmoves((prevmoves)=>{
+            return {...prevmoves,Blue:prevmoves.Blue+1}
+        })
+    }
 
         */
 
